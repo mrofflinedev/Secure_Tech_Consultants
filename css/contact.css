@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body.contact-page {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 28px clamp(16px, 5vw, 72px);
+    color: #1e293b;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact-page > img {
+    display: block;
+    width: min(200px, 60vw);
+    height: auto;
+    margin: 0 auto 24px;
+    border-radius: 8px;
+}
+
+.contact-page h1,
+.contact-page h2 {
+    color: #1e3a8a;
+}
+
+.contact-page h1 {
+    margin: 0 0 8px;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.contact-page form {
+    max-width: 720px;
+    margin: 24px 0 36px;
+    padding: clamp(18px, 3vw, 32px);
+    background: #ffffff;
+    border: 1px solid #dbe3ed;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.contact-page label {
+    display: inline-block;
+    margin: 4px 12px 4px 0;
+    font-weight: 600;
+}
+
+.contact-page input {
+    max-width: 100%;
+    padding: 10px 12px;
+    margin: 6px 0;
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.contact-page input:focus {
+    border-color: #2563eb;
+    outline: 3px solid rgba(37, 99, 235, 0.18);
+}
+
+.contact-page input[type="submit"] {
+    padding: 11px 24px;
+    color: #ffffff;
+    background: #15803d;
+    border: 0;
+    cursor: pointer;
+}
+
+.contact-page input[type="submit"]:hover {
+    background: #166534;
+}
+
+.contact-page p2 {
+    display: block;
+    margin: 12px 0 24px;
+}
+
+.contact-page p2 img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.contact-page a {
+    color: #1d4ed8;
+}
+
+.contact-page iframe {
+    display: block;
+    width: 100%;
+    min-height: 350px;
+    height: min(55vh, 550px);
+    border: 0;
+    border-radius: 12px;
+}
+
+.contact-page footer {
+    padding: 20px 0 4px;
+    color: #475569;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    body.contact-page {
+        padding: 20px 16px;
+    }
+
+    .contact-page form {
+        width: 100%;
+    }
+
+    .contact-page input:not([type="submit"]) {
+        width: 100%;
+    }
+}
